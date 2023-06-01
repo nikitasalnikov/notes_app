@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_slidable/flutter_slidable.dart';
 import 'package:provider/provider.dart';
 import 'package:template/domain/hive/hive_box.dart';
 import 'package:template/domain/hive/notes_data.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:template/domain/providers/notes_provider.dart';
+import 'package:template/ui/app_navigator/app_routes.dart';
 import 'package:template/ui/widgets/card_widget.dart';
 import 'package:template/ui/widgets/dialog_window_widget.dart';
 
@@ -22,7 +24,8 @@ class NotesBody extends StatelessWidget {
           itemBuilder: (context, index) {
             return GestureDetector(
               onTap: () {
-                model.setControllers(index);
+                model.setControllers(index); // установка поля ввода значений
+
                 showModalBottomSheet(
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(10),

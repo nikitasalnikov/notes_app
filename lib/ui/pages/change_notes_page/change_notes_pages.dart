@@ -15,7 +15,7 @@ class ChangeNotesPages extends StatelessWidget {
       appBar: AppBar(
         leading: IconButton(
             onPressed: () {
-              Navigator.popAndPushNamed(context, AppRoutes.home,);
+              Navigator.pop(context, AppRoutes.home,);
             },
             icon: const Icon(
               Icons.arrow_back,

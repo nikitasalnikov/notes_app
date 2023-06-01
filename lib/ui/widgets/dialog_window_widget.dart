@@ -1,6 +1,8 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:template/domain/providers/notes_provider.dart';
+import 'package:template/generated/locale_keys.g.dart';
 import 'package:template/ui/app_navigator/app_routes.dart';
 import 'package:template/ui/theme/app_colors.dart';
 import 'package:template/ui/theme/app_styles.dart';
@@ -20,7 +22,7 @@ class DialogWindowWidget extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(16),
       child: Column(
-        mainAxisSize: MainAxisSize.min,
+        mainAxisSize: MainAxisSize.max,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Align(
@@ -51,7 +53,7 @@ class DialogWindowWidget extends StatelessWidget {
               color: AppColors.textGrey,
             ),
             label: Text(
-              'Редактировать',
+              LocaleKeys.redaktirovat.tr(),
               style: AppStyles.fontStyle.copyWith(
                 fontSize: 16,
               ),

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_slidable/flutter_slidable.dart';
 import 'package:provider/provider.dart';
 import 'package:template/domain/hive/hive_box.dart';
 import 'package:template/domain/hive/notes_data.dart';

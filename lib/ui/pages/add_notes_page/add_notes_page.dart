@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:hive/hive.dart';
+
 import 'package:provider/provider.dart';
-import 'package:template/domain/hive/notes_data.dart';
+
 import 'package:template/domain/providers/notes_provider.dart';
 import 'package:template/ui/theme/app_colors.dart';
 import 'package:template/ui/theme/app_styles.dart';

@@ -82,7 +82,7 @@ class OpenDrawer extends StatelessWidget {
         color: AppColors.blackColor,
       ),
     );
-    ;
+    
   }
 }
 
